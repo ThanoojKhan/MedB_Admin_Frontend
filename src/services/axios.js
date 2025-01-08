@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-hot-toast";
 
-const enviroment = "development";
+const enviroment = "production";
 const development = "http://localhost:8000";
 const production = "https://medb-admin-server0.onrender.com"; 
 
