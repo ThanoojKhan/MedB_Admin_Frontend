@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-hot-toast";
 
-const enviroment = "production";
+const enviroment = "development";
 const development = "http://localhost:8000";
 const production = "https://medb-admin-server0.onrender.com"; 
 
@@ -26,7 +26,7 @@ const getHeaders = (url = '') => {
     const token = getToken();
     return {
         headers: {
-            // 'Content-Type': 'multipart/form-data',
+            'Content-Type': 'multipart/form-data',
             Authorization: `Bearer ${token}`,
         },
     };
