@@ -3,7 +3,7 @@ import { toast } from "react-hot-toast";
 
 const enviroment = "development";
 const development = "http://localhost:8000";
-const production = "https://med-b-admin-git-main-thanooj-khans-projects.vercel.app/"; 
+const production = "https://med-b-admin-server0.vercel.app/"; 
 
 const axiosInstance = axios.create({
     baseURL: enviroment === "development" ? development : production,
